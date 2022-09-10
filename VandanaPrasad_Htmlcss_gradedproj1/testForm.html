@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Form</title>
+    <link rel="stylesheet" href="testForm.css">
+</head>
+
+<body>
+    <div class="labTest">
+        <div class="innerDiv1">
+            <form action="">
+                <article>
+                    <h2>1. Your Contact Details</h2>
+                    <input type="text" title="name" required spellcheck="true" placeholder="Full Name">
+                    <input type="text" title="name" required spellcheck="true"
+                        placeholder="Patient Id(if already registered)">
+                    <input type="number" min="6000000000" max="9999999999" required placeholder="Phone Number">
+                    <input type="email" required placeholder="Email Id">
+                </article>
+                <article>
+                    <h2>2. Address</h2>
+                    <input type="text" required placeholder="House Number">
+                    <input type="text" required placeholder="Street">
+                    <input type="text" required placeholder="Area">
+                    <h4>District</h4>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore Urban</option>
+                        <option value="Bangalore Rural">Bangalore Rural</option>
+                        <option value="Mysore">Mysore</option>
+                        <option value="Ramnagar">Ramanagar</option>
+                    </select>
+                </article>
+
+                <article>
+                    <h2>3. Choose the test Type</h2>
+                    <p style="color:darkgrey; font-size:15px">Check atleast one box without fail</p>
+                    <input type="checkbox" id="c1" name="option1" value="Over Charge">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Meter Board Not Working">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Close the Meter">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option3" value="Hard Copy Not Provided">
+                    <label for="c3">Thyroid Stimulating Hormone(TSH) </label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Close the Meter">
+                    <label for="c3">Glucose Test</label>
+                </article>
+
+                <article>
+                    <h2>4. Do you want a hard copy of the report ?</h2>
+                    <input type="radio" id="c5" name="option" value="True" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="False" checked="true">
+                    <label for="c6">No</label>
+                </article>
+
+                <article>
+                    <h2>5 Select your comfortable date and time</h2>
+                    <input type="date"><input type="time">
+                </article>
+            </form>
+
+        </div>
+
+        <div class="innerDiv2">
+            <div class="lab-image"></div>
+        </div>
+
+    </div>
+
+    <button class="buttons">Reset</button>
+    <button class="buttons">Submit</button>
+
+</body>
+
+</html>
